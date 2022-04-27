@@ -12,8 +12,7 @@ def get(key):
 	
 def set(key, val):
 	dictionary.update({key : val})
-	if dictionary.get(key) == val: return True
-	return False
+	return dictionary.get(key) == val
 	
 serverPort = int(sys.argv[1])
 serverSocket = socket(AF_INET, SOCK_DGRAM)
